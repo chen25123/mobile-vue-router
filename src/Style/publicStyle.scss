@@ -1,0 +1,95 @@
+$bgColor: #fff;
+$color: rgba(7, 17, 27, 0.1);
+$px: (1px);
+
+html, body {
+  user-select: none;
+  -webkit-user-select: none;
+  font-family: "Avenir PingFang SC";
+  font-size: 14px;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100%;
+}
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li { list-style: none;}
+.clears {
+  height: 1px;
+  width: 100%;
+  line-height: 1px;
+  font-size: 0px;
+}
+.warpper-box {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bgColor;
+}
+
+.pd-top10 {
+  padding-top: 10 * $px;
+}
+
+.pd-top20 {
+  padding-top: 20 * $px;
+}
+
+.pd-top30 {
+  padding-top: 30 * $px;
+}
+.pd-top35 {
+  padding-top: 35 * $px;
+}
+
+.pd-left-right20 {
+  padding: 0 20 * $px;
+}
+
+.pd-left-right40 {
+  padding: 0 40 * $px;
+}
+
+.pa-left40 {
+  padding-left: 40 * $px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.border-1px {
+  position: relative;
+  &::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid $color;
+  }
+}
+
+.box-temp {
+  width: 100%;
+  .title {
+    line-height: 30 * $px;
+    padding-left: 20 * $px;
+  }
+}
+.mr-top10 {
+  margin-top: 10 * $px;
+}
+.show-box {
+  padding: 0 20 * $px;
+}
